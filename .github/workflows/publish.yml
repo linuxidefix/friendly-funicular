@@ -1,0 +1,10 @@
+name: Publish Release
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  release:
+    uses: linuxidefix/friendly-funicular/.github/workflows/reusable-publish.yml@main
