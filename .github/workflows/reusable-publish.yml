@@ -19,7 +19,7 @@ jobs:
         id: changelog
         uses: mikepenz/release-changelog-builder-action@v3
         with:
-          configuration: .changelog-generator.json
+          #configuration: .changelog-generator.json
           ignorePreReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
